@@ -18,7 +18,7 @@
 <body>
 
 <h1>Privacy Policy for RenewBook</h1>
-<p class="updated">Last updated: 08/06/2026</p>
+<p class="updated">Last updated: 08/18/2026</p>
 
 <p>RenewBook ("we," "our," "the app") is a subscription-tracking app. This policy explains what information RenewBook collects, why, and how you can control it.</p>
 
@@ -30,13 +30,14 @@ RenewBook does not sell your data, does not show ads, and does not share your da
 <p><strong>Account information.</strong> When you create an account, we collect your email address and a securely hashed password (we never see or store your password in plain text). If you sign in with Google, GitHub, or Apple instead, we receive the email address associated with that account from the provider.</p>
 <p><strong>Subscription data you enter.</strong> The names, categories, prices, currencies, billing cycles, and renewal dates of the subscriptions you choose to track. This is the core data the app is built around — it never leaves your account and is never used for anything other than showing it back to you.</p>
 <p><strong>Biometric data.</strong> If you enable fingerprint/face unlock, that authentication happens entirely on your device using your operating system's built-in biometric APIs. RenewBook never receives, stores, or transmits your fingerprint or face data — your device handles this itself and only tells our app "unlocked" or "not unlocked."</p>
-<p><strong>Notification scheduling.</strong> To remind you before a renewal, RenewBook schedules local notifications on your device. This currently happens entirely on-device; we do not operate a remote push notification server at this time.</p>
+<p><strong>Notification scheduling.</strong> To remind you before a renewal, RenewBook can notify you two ways, both of which you control from Settings. Local device reminders are scheduled entirely on-device and never leave your phone. If you enable email reminders or the summary digest, RenewBook also sends you an email — through a third-party email delivery provider, described below — containing the subscription names, renewal dates, and amounts relevant to that reminder. You can turn either or both of these off at any time.</p>
 <p><strong>Purchase information (Pro subscribers only).</strong> If you purchase RenewBook Pro, the purchase is processed by Google Play Billing (and Apple's equivalent on iOS). We receive confirmation that you have an active subscription, but we do not receive or store your payment card details — those are handled entirely by Google/Apple.</p>
 
 <h2>How we use this information</h2>
 <ul>
   <li>To create and secure your account</li>
   <li>To display your subscriptions, spending totals, and renewal reminders back to you</li>
+  <li>To send renewal reminder and/or digest emails, if you've turned either on in Settings</li>
   <li>To detect potentially overlapping subscriptions within your own account (this happens on your data only, never compared against other users)</li>
   <li>To provide customer support if you contact us</li>
   <li>To determine whether your account has an active Pro subscription</li>
@@ -46,6 +47,8 @@ RenewBook does not sell your data, does not show ads, and does not share your da
 <p>We do not sell or rent your data to anyone. We use the following service providers to operate the app, each of whom processes data only as needed to provide their service to us:</p>
 <ul>
   <li><strong>Supabase</strong> — our database and authentication provider, which stores your account and subscription data securely.</li>
+  <li><strong>Resend</strong> — our email delivery provider. If you enable renewal reminder or digest emails, Resend receives your email address and the content of those emails (subscription names, renewal dates, and amounts) solely to deliver them to you. If you keep both email settings turned off, Resend never receives any of your data.</li>
+  <li><strong>RevenueCat</strong> — manages and verifies Pro subscription status on our behalf. RevenueCat receives your account identifier and subscription/purchase event data from Google Play Billing or the Apple App Store (start date, renewal, cancellation, etc.) so we can determine whether your account is Pro. Like us, RevenueCat does not receive your payment card details.</li>
   <li><strong>Google Play Billing / Apple App Store</strong> — process Pro subscription payments (Pro subscribers only). We do not receive your payment details.</li>
 </ul>
 <p>We may disclose information if required by law, or to protect the rights, safety, or property of RenewBook or our users.</p>
